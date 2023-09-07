@@ -14,5 +14,10 @@ steps{
 sh "mvn clean package"
 }
 }
+stage(deploy){
+steps{
+deploy adapters: [tomcat9(credentialsId: '0105d6b3-09e0-45d3-b4c6-2ed9a971095b', path: '', url: 'http://3.84.6.172:8080/')], contextPath: null, war: '**/*.war'
+}
+}
 }
 }
