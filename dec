@@ -27,6 +27,11 @@ steps{
 nexusArtifactUploader artifacts: [[artifactId: 'maven-web-application', classifier: '', file: 'target/maven-web-application.war', type: 'war']], credentialsId: 'nexustoken', groupId: 'com.mt', nexusUrl: '44.201.199.176:8081/', nexusVersion: 'nexus3', protocol: 'http', repository: 'nexus', version: '0.0.1-SNAPSHOT'
 }
 }
+stage("deploy"){
+steps{
+deploy adapters: [tomcat9(credentialsId: 'tomcattoken', path: '', url: 'http://3.84.233.244:8080/')], contextPath: null, war: '**/*.war'
+}
+}
 }
 }
 
