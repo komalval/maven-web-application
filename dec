@@ -22,6 +22,11 @@ sh "mvn sonar:sonar"
 }
 }
 }
+stage("upload artifcates"){
+steps{
+nexusArtifactUploader artifacts: [[artifactId: 'maven-web-application', classifier: '', file: 'target/maven-web-application.war', type: 'war']], credentialsId: 'nexustoken', groupId: 'com.mt', nexusUrl: '44.201.199.176:8081/', nexusVersion: 'nexus3', protocol: 'http', repository: 'nexus', version: '0.0.1-SNAPSHOT'
+}
+}
 }
 }
 
