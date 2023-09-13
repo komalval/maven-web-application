@@ -1,4 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
@@ -21,8 +21,8 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://34.207.165.244:9000/</sonar.host.url>
-		<sonar.login>squ_7b295c064fc77f71c191b32c2481dcfb305ff3d8</sonar.login>
+		<sonar.host.url>http://3.6.93.123:9000/</sonar.host.url>
+		<sonar.login>squ_a7a22bdd6c12d9c06242e529f44c0b34aac6a841</sonar.login>
 		
 		 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -98,14 +98,14 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>release Release Nexus Repository</name>
-	      <url>http://44.204.75.121:8081/repository/release/</url>
+	      <name>Muthoot Release Nexus Repository</name>
+	      <url>http://13.235.2.147:8081/repository/muthot_fin_release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>sanpshot Snapshot Nexus Repository</name>
-	      <url>http://44.204.75.121:8081/repository/snapshot/</url>
+	      <name>Muthoot Snapshot Nexus Repository</name>
+	      <url>http://13.235.2.147:8081/repository/muthoot_fin_snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
